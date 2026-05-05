@@ -1,11 +1,8 @@
 {
     "data": {"name": "dataset"},
-    "layer": [
-        {"mark": "bar",
-         "encoding": {
-                "x": {"field": "NATIONALITEIT","sort": "-y"},
-                "y": {"aggregate": "count"}
-            }
-        }
-    ]
+    "mark": "bar",
+    "encoding": {
+      "x": {"field": "NATIONALITEIT","sort": "-y"},
+      "y": {"aggregate": "count"}
+    }    
 }
