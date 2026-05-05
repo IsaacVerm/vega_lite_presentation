@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Embedding Vega-Lite</title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@6.2.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@7.1.0"></script>
+  </head>
+  <body>
+    <div id="vis"></div>
+
+    <script type="text/javascript">
+      var yourVlSpec = {
+        $schema: 'https://vega.github.io/schema/vega-lite/v6.json',
+        description: 'A simple bar chart with embedded data.',
+        data: {
+          url: 'kerncijfers_economische_migratie.csv',
+          format: { type: 'dsv', delimiter: ';' }
+        },
+        mark: 'bar',
+        encoding: {
+          x: {field: 'NATIONALITEIT', type: 'ordinal', sort: '-y'},
+          y: {field: 'NATIONALITEIT', aggregate: 'count'}
+        },
+      };
+      vegaEmbed('#vis', yourVlSpec);
+    </script>
+  </body>
+</html>
