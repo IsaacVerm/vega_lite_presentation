@@ -131,6 +131,34 @@ I added a simplified `bar_powerbi.json` bar chart.
 
 So 1 line for data, 1 line for mark bar and a line for each mapping in the encoding (x and y in this case).
 
+## What to remember
+
+### Vega Lite is text so can be checked into version control
+
+- easy to track changes
+- even easier if you keep each graphical element on a line of its own because git diff works by comparing lines
+
+### Vega Lite syntax isn't too hard to understand
+
+Minimum needed:
+
+- data
+- mark: what kind of graphical element do you want (bar, line,...)
+- encoding: how should the data be translated to attributes of the mark?
+
+```json
+{
+    "data": {"name": "dataset"},
+    "mark": "bar",
+    "encoding": {
+      "x": {"field": "NATIONALITEIT","sort": "-y"},
+      "y": {"aggregate": "count"}
+    }    
+}
+```
+
+Best to first do things by hand (but based on examples provided by Vega Lite).
+
 ## `git` commands to remember
 
 - `git log --oneline -n`
