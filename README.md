@@ -84,10 +84,38 @@ the Vega Lite examples do this by default
 - open new blank Power BI report
 - data source Web and use raw Github URL pointing to csv
 - download and install Deneb (PBI certified)
+- copy `bar.json` spec into Power BI
+- run
+
+This doesn't work because you need to make a couple of changes:
+
+- increase canvas size
+  - applies to both the visual and the canvas itself
+  - something like 1000 x 3000 so the labels on the x axis are visible
+  - lots of countries only have a single applicant
+- increase row size
+  - [limited to 10000 rows by default in Deneb Power BI](https://deneb.guide/docs/1.0/dataset#data-row-limits)
+  - to increase in Power BI: format canvas > data limit settings > override row limit
+  - if not a graph will displayed but just using a 10000 row sample
+- use index to override row context
+  - Power BI provides the data layer
+  - https://github.com/deneb-viz/deneb/issues/86#issuecomment-893001933
+  - by default our dataset doesn't have a unique identifier
+  - to create one go edit query > add column > add index
+  - use this new index created in power query in the values Values field of the deneb visual
+
+> You need to force Power BI to keep all rows unique, so that the spec can do what you want. we do this by adding a column to the dataset that contains a unique value
 
 ### Update graph and commit
 
 Shows the benefits of git.
+
+## `git` commands to remember
+
+- `git log --oneline -n`
+- `git checkout`
+- `git commit -m "{message}"`
+- `git push`
 
 ## References
 
