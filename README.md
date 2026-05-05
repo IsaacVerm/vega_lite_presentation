@@ -106,6 +106,8 @@ This doesn't work because you need to make a couple of changes:
 
 > You need to force Power BI to keep all rows unique, so that the spec can do what you want. we do this by adding a column to the dataset that contains a unique value
 
+All default Power BI filters, DAX,... still apply so you can reuse your knowledge.
+
 ### Update graph and commit
 
 Shows the benefits of git.
