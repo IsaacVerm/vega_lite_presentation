@@ -136,7 +136,7 @@ So 1 line for data, 1 line for mark bar and a line for each mapping in the encod
 ### Vega Lite is text so can be checked into version control
 
 - easy to track changes
-- even easier if you keep each graphical element on a line of its own because git diff works by comparing lines
+- even easier if you keep each graphical element on a line of its own because git diff works by comparing lines (example https://github.com/IsaacVerm/vega_lite_presentation/commit/00a2d7b8c1f461cdefdd82b483b083a50ab5e323)
 
 ### Vega Lite syntax isn't too hard to understand
 
