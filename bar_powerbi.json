@@ -2,7 +2,7 @@
     "data": {"name": "dataset"},
     "mark": "bar",
     "encoding": {
-      "x": {"field": "NATIONALITEIT","sort": "-y"},
+      "x": {"field": "NATIONALITEIT","sort": "y"},
       "y": {"aggregate": "count"}
     }    
 }
