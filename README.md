@@ -75,14 +75,32 @@ We don't want a random bar graph but the count by nationality so some modificati
 
 ### Visualisation with the same bar chart in Power BI
 
+Requirement: get Deneb Power BI extension so you can run Vega Lite in Power BI as well.
+
+Save Vega Lite spec as JSON file in repo.
+make sure to use double quotes (if not Deneb plays up)
+the Vega Lite examples do this by default
+
+- open new blank Power BI report
+- data source Web and use raw Github URL pointing to csv
+- download and install Deneb (PBI certified)
+
+### Update graph and commit
+
+Shows the benefits of git.
+
 ## References
 
-- [GitHub Codespaces](https://github.com/features/codespaces)
-- [Kerncijfers economische migratie](https://www.vlaanderen.be/datavindplaats/catalogus/abk01-jaarrapport-kerncijfers-economische-migratie)
-- [Datavindplaats](https://www.vlaanderen.be/datavindplaats)
-- [sqlite-utils](https://sqlite-utils.datasette.io/en/stable/cli.html)
-- [Datasette](https://datasette.io/)
-- [Vega Lite](https://vega.github.io/vega-lite/)
+- [GitHub Codespaces](https://github.com/features/codespaces): Linux container with Python,... pre-installed
+- [Kerncijfers economische migratie](https://www.vlaanderen.be/datavindplaats/catalogus/abk01-jaarrapport-kerncijfers-economische-migratie): data used in this presentation
+- [Datavindplaats](https://www.vlaanderen.be/datavindplaats): open data Vlaanderen
+- [sqlite-utils](https://sqlite-utils.datasette.io/en/stable/cli.html): library to convert to `sqlite`
+- [Datasette](https://datasette.io/): library to inspect `sqlite` database
+- [Vega Lite](https://vega.github.io/vega-lite/): Vega Lite is a minimal version of Vega
+- [Vega Lite examples](https://vega.github.io/vega-lite/examples/): take an example and modify to see how things work
 - [Vega](https://vega.github.io/vega/)
-- [Pro Git](https://git-scm.com/book/en/v2)
+- [Pro Git](https://git-scm.com/book/en/v2): reading only the introduction is sufficient for 90% of what you need to do
 - [everything curl](https://everything.curl.dev/project/does.html#curl-the-command-line-tool)
+- [Deneb](https://deneb.guide/): Power BI implementation of Vega Lite
+- [A Layered Grammar of Graphics](https://byrneslab.net/classes/biol607/readings/wickham_layered-grammar.pdf)
+- [ggplot2](https://ggplot2.tidyverse.org/articles/ggplot2.html): has the same ancestor as Vega Lite: the grammar of graphics
