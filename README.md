@@ -70,7 +70,7 @@ This opens a chart which you can right away export a graph using 3 dots.
 We don't want a random bar graph but the count by nationality so some modifications have to be made:
 
 - [change input data source to CSV](https://vega.github.io/vega-lite/docs/data.html#url)
-- [aggregate by nationality] using [aggregate: 'count'](https://vega.github.io/vega-lite/examples/bar_aggregate_sort_by_encoding.html)
+- aggregate by nationality using [aggregate: 'count'](https://vega.github.io/vega-lite/examples/bar_aggregate_sort_by_encoding.html)
 - [sort with biggest counts to the left of the x axis](https://vega.github.io/vega-lite/examples/bar_aggregate_sort_by_encoding.html)
 
 ### Visualisation with the same bar chart in Power BI
