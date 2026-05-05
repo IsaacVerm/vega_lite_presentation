@@ -111,6 +111,24 @@ All default Power BI filters, DAX,... still apply so you can reuse your knowledg
 ### Update graph and commit
 
 Shows the benefits of git.
+I added a simplified `bar_powerbi.json` bar chart.
+1 line for each element in the graph (most readable in my opinion):
+
+```json
+{
+    "data": {"name": "dataset"},
+    "layer": [
+        {"mark": "bar",
+         "encoding": {
+                "x": {"field": "NATIONALITEIT","sort": "-y"},
+                "y": {"aggregate": "count"}
+            }
+        }
+    ]
+}
+```
+
+So 1 line for data, 1 line for mark bar and a line for each mapping in the encoding (x and y in this case).
 
 ## `git` commands to remember
 
