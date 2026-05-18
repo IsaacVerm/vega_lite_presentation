@@ -1,0 +1,23 @@
+{
+    "data": {
+        "name": "dataset"
+    },
+    "layer": [
+        {
+            "mark": "bar",
+            "encoding": {
+                "x": {
+                    "field": "year"
+                },
+                "y": {
+                    "field": "count", "type": "quantitative"
+                }
+            }
+        },
+        {
+            "mark": "rule",
+            "data": {"values": [{"year": 2020}]},
+            "encoding": {"x": {"field": "year"}, "color": {"value": "red"}}
+        }
+    ]
+}
