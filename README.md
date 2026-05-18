@@ -118,15 +118,15 @@ I added a simplified `bar_powerbi.json` bar chart.
 ```json
 {
     "data": {"name": "dataset"},
-    "layer": [
-        {"mark": "bar",
-         "encoding": {
-                "x": {"field": "NATIONALITEIT","sort": "-y"},
-                "y": {"aggregate": "count"}
-            }
-        }
-    ]
-}
+        "layer": [
+                {"mark": "bar",
+                         "encoding": {
+                                         "x": {"field": "NATIONALITEIT","sort": "-y"},
+                                                         "y": {"aggregate": "count"}
+                                                                     }
+                                                                             }
+                                                                                 ]
+                                                                                 }}
 ```
 
 So 1 line for data, 1 line for mark bar and a line for each mapping in the encoding (x and y in this case).
