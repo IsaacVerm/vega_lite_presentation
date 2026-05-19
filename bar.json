@@ -17,7 +17,7 @@
         {
             "mark": "rule",
             "data": {"values": [{"JAAR": 2020}]},
-            "encoding": {"x": {"field": "JAAR"}, "color": {"value": "red"}}
+            "encoding": {"x": {"field": "JAAR"}, "color": {"value": "blue"}}
         }
 
   ]
