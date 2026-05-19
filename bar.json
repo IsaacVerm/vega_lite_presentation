@@ -1,0 +1,24 @@
+{
+  "data": {
+    "name": "dataset"
+  },
+  "layer": [
+        {
+            "mark": "bar",
+            "encoding": {
+                "x": {
+                    "field": "JAAR"
+                },
+                "y": {
+                    "field": "count", "type": "quantitative"
+                }
+            }
+        },
+        {
+            "mark": "rule",
+            "data": {"values": [{"JAAR": 2020}]},
+            "encoding": {"x": {"field": "JAAR"}, "color": {"value": "red"}}
+        }
+
+  ]
+}
