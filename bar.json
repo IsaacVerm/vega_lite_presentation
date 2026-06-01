@@ -8,7 +8,7 @@
     },
         "mark": "bar",
         "encoding": {
-          "x": {"field": "NATIONALITEIT", "type": "ordinal", "sort": "-y"
+          "x": {"field": "NATIONALITEIT", "sort": "-y"
         },
           "y": {"field": "NATIONALITEIT", "aggregate": "count"
         }
